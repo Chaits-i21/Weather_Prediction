@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Data Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Data</h1>
+        
+        <!-- Dropdown for city selection -->
+        <label for="cities">Select a City:</label>
+        <select id="cities">
+            <option value="select">Select City</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Jodhpur">Jodhpur</option>
+        </select>
+
+        <!-- Input field for date -->
+        <label for="date">Enter Date:</label>
+        <input type="date" id="date">
+
+        <!-- Button to display data -->
+        <button onclick="displayData()">Display Data</button>
+        
+        <!-- Display data here -->
+        <div id="weatherData"></div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
